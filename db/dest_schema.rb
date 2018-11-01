@@ -366,9 +366,11 @@ ActiveRecord::Schema.define(version: 20161227212224) do
     t.integer "detail_id"
     t.text    "name"
     t.text    "email"
+    t.text    "author_id"
   end
 
   add_index "module_authors", ["detail_id"], name: "index_module_authors_on_detail_id", using: :btree
+  add_index "module_authors", ["author_id"], name: "index_module_authors_id", using: :btree
 
   create_table "module_details", force: :cascade do |t|
     t.datetime "mtime"
