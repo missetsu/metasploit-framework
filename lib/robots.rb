@@ -30,7 +30,7 @@ require 'rex/logging/log_dispatcher'
 
 # https://github.com/fizx/robots
 class Robots
-  DEFAULT_TIMEOUT = 3
+  DEFAULT_TIMEOUT = 15
 
   # Represents a parsed robots.txt file
   class ParsedRobots
